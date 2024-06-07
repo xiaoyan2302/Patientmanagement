@@ -7,19 +7,7 @@ CREATE TABLE patient (
 );
 ALTER TABLE patient ADD CONSTRAINT patient_pk PRIMARY KEY ( id );
 
-CREATE TABLE prescription (
-                          id             BIGSERIAL NOT NULL,
-                          patient_id     BIGSERIAL NOT NULL,
-                          rx_number      VARCHAR(100),
-                          rx_date        VARCHAR(100),
-                          rx_prescriber  Varchar(100),
-                          rx_name        VARCHAR(100),
-                          rx_qty         VARCHAR(100),
-                          rx_refill      varchar(10),
-                          rx_description varchar(100)
 
-);
-ALTER TABLE prescription ADD CONSTRAINT prescription_pk PRIMARY KEY ( id );
 
 CREATE TABLE inventory (
                              ndc_number      VARCHAR(100),
